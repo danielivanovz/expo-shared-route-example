@@ -11,7 +11,7 @@ export default function Hub() {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "white",
+        backgroundColor: "#aaa",
         gap: 10,
       }}
     >
@@ -20,7 +20,7 @@ export default function Hub() {
       <Pressable
 				style={{ backgroundColor: '#ddd', padding: 10, borderRadius: 10 }}
         onPress={() => {
-          router.push(`/(hub)/'from hub'`);
+          router.push(`newsId/'from hub'`);
         }}
       >
         <Text>go to news id</Text>

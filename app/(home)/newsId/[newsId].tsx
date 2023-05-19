@@ -1,10 +1,9 @@
-
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import { View, Text, Pressable } from "react-native";
 
 export default function NewsId() {
   const router = useRouter();
-	const { newsId } = useLocalSearchParams();
+  const { newsId } = useLocalSearchParams();
 
   return (
     <View
@@ -12,16 +11,16 @@ export default function NewsId() {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "white",
+        backgroundColor: "#bbb",
         gap: 10,
       }}
     >
-      <Stack.Screen options={{ title: "Hub" }} />
+      <Stack.Screen options={{ title: "News Id" }} />
       <Text style={{ color: "black" }}>news id {newsId}</Text>
       <Pressable
-				style={{ backgroundColor: '#ddd', padding: 10, borderRadius: 10 }}
+        style={{ backgroundColor: "#ddd", padding: 10, borderRadius: 10 }}
         onPress={() => {
-          router. back()
+          router.back();
         }}
       >
         <Text>go back</Text>
