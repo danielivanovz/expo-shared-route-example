@@ -1,8 +1,12 @@
 import React from "react";
-import { Slot } from "expo-router";
+import { Stack } from "expo-router";
 
 export default function RootLayout() {
   return (
-    <Slot initialRouteName="welcome" screenOptions={{ headerShown: false }} />
+    <Stack initialRouteName="(tabs)">
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack.Screen name="newsId" options={{ headerShown: false }} />
+      <Stack.Screen name="(auth)" options={{ title: "Welcome" }} />
+    </Stack>
   );
 }

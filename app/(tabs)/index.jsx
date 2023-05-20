@@ -1,4 +1,3 @@
-
 import { Stack, useRouter } from "expo-router";
 import { View, Text, Pressable } from "react-native";
 
@@ -18,7 +17,7 @@ export default function Hub() {
       <Stack.Screen options={{ title: "Hub" }} />
       <Text style={{ color: "black" }}>Hub</Text>
       <Pressable
-				style={{ backgroundColor: '#ddd', padding: 10, borderRadius: 10 }}
+        style={{ backgroundColor: "#ddd", padding: 10, borderRadius: 10 }}
         onPress={() => {
           router.push(`newsId/'from hub'`);
         }}

@@ -17,7 +17,7 @@ export default function News() {
       <Stack.Screen options={{ title: "News" }} />
       <Text style={{ color: "black" }}>News</Text>
       <Pressable
-				style={{ backgroundColor: '#ddd', padding: 10, borderRadius: 10 }}
+        style={{ backgroundColor: "#ddd", padding: 10, borderRadius: 10 }}
         onPress={() => {
           router.push(`newsId/'from news'`);
         }}

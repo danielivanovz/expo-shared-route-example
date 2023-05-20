@@ -15,7 +15,6 @@ export default function NewsId() {
         gap: 10,
       }}
     >
-      <Stack.Screen options={{ title: "News Id" }} />
       <Text style={{ color: "black" }}>news id {newsId}</Text>
       <Pressable
         style={{ backgroundColor: "#ddd", padding: 10, borderRadius: 10 }}

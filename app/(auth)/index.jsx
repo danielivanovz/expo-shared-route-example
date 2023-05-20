@@ -1,4 +1,4 @@
-import { Stack, useRouter } from "expo-router";
+import { useRouter } from "expo-router";
 import { View, Text, Pressable } from "react-native";
 
 export default function Welcome() {
@@ -14,12 +14,11 @@ export default function Welcome() {
         gap: 10,
       }}
     >
-      <Stack.Screen options={{ title: "Welcome", headerShown: true }} />
       <Text style={{ color: "black" }}>Welcome</Text>
       <Pressable
-				style={{ backgroundColor: '#ddd', padding: 10, borderRadius: 10 }}
+        style={{ backgroundColor: "#ddd", padding: 10, borderRadius: 10 }}
         onPress={() => {
-          router.push("/hub");
+          router.push("/(tabs)");
         }}
       >
         <Text>Login</Text>
